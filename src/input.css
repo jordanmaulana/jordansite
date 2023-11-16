@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply text-grey max-w-sm;
+  }
+
+  h1 {
+    @apply text-7xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+
+  a {
+    @apply cursor-pointer;
+  }
+
+  * {
+    @apply text-white;
+  }
+}

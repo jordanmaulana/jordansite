@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="src/body_content.js" type="module"></script>
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="src/typing.js" type="module"></script>
+
+    <title>Jordan's Space</title>
+  </head>
+  <body class="container bg-background mx-auto max-w-full relative">
+    <img
+      src="./public/blue_ray_corner.png"
+      class="absolute top-0 right-0 -z-10"
+    />
+    <header class="flex justify-between p-8">
+      <h2 class="text-3xl font-bold">I Wanna Learn®️</h2>
+      <nav class="flex items-center gap-8 text-white">
+        <a>Services</a>
+        <a>Portofolio</a>
+        <a>Contact</a>
+        <a>About</a>
+      </nav>
+    </header>
+    <main>
+      <section class="flex justify-center mt-12 relative">
+        <div
+          class="absolute grid place-items-center [grid-template-areas:'stack']"
+        >
+          <img
+            src="./public/photo.png"
+            class="object-scale-down max-w-lg z-0 [grid-area:stack] rounded"
+          />
+          <img
+            src="./public/photo_transparent.png"
+            class="object-scale-down max-w-lg z-20 [grid-area:stack]"
+          />
+          <div class="z-0 [grid-area:stack] absolute bottom-36">
+            <div
+              id="hobbyBg"
+              class="text-background opacity-60 font-extrabold text-8xl text-center"
+            ></div>
+          </div>
+          <div class="z-20 [grid-area:stack] absolute bottom-40 drop-shadow-lg">
+            <div id="hobby" class="text-6xl font-bold text-center"></div>
+          </div>
+        </div>
+        <div class="flex w-8/12 justify-between">
+          <div class="z-10">
+            <h2 class="text-3xl font-bold text-grey">Flutter Dev</h2>
+            <h1>Jordan Maulana</h1>
+            <div class="w-40 h-1 bg-orange-600 mt-24"></div>
+            <p class="mt-24">
+              Experienced Flutter Developer with a demonstrated history of
+              making company the best on mobile development. Currently leading
+              GresikDev, local IT community in Gresik.
+            </p>
+          </div>
+          <div id="statistics" class="flex flex-col items-end gap-32"></div>
+        </div>
+      </section>
+      <section class="flex h-52 w-full mt-40 relative">
+        <img src="./public/bg_left.png" class="absolute left-0 -top-96 -z-10" />
+
+        <hyperlinks
+          class="bg-background bg-opacity-70 h-52 w-full flex items-center justify-center"
+        >
+          <a href="https://www.linkedin.com/in/jordan-maulana/" target="_blank"
+            ><img src="public/linkedin.png" class="h-36"
+          /></a>
+          <a
+            href="https://www.upwork.com/freelancers/~0188381fd11670942b"
+            target="_blank"
+            ><img src="public/upwork.png" class="h-36"
+          /></a>
+        </hyperlinks>
+      </section>
+      <section class="mx-auto w-8/12 flex justify-between mt-16">
+        <div>
+          <h2 class="text-6xl font-bold">Original Apps</h2>
+          <p class="mt-8">
+            Crafted in the digital workshop of innovation, my original apps
+            redefine the landscape of utility, inject doses of pure fun, and
+            seamlessly blend into the rhythm of lifestyle.
+          </p>
+        </div>
+        <div id="originalApps" class="flex flex-col gap-8"></div>
+      </section>
+      <section class="mx-auto w-8/12 flex justify-between mt-36">
+        <div>
+          <h2 class="text-6xl font-bold">Portofolio</h2>
+          <p class="mt-8">
+            Let's explore how my published apps can contribute to your digital
+            landscape, offering not just functionality but an immersive and
+            engaging user experience.
+          </p>
+        </div>
+        <div id="portofolio" class="flex flex-col gap-8">
+          <!-- <a
+            class="flex gap-8 bg-black p-8 bg-opacity-30 rounded-3xl no-underline border border-slate-800"
+          >
+            <img
+              class="w-32 h-32 rounded-3xl shadow-md"
+              src="https://play-lh.googleusercontent.com/H_aUTk4jfoVLzbkZo8bIxP5TrTiw4m7yiFxS5IV4gRXd842iD55stgJgBPX3sCZy09qN=w240-h480-rw"
+            />
+          </a> -->
+        </div>
+      </section>
+    </main>
+    <footer class="text-center bg-black mt-24 p-8 w-full">
+      <div class="flex justify-between">
+        <div>
+          Special Thanks to
+          <a href="https://www.devscale.id/" target="_blank">devscale.id</a> ❤️
+        </div>
+
+        <div>
+          Follow me:
+          <div id="socialMedia" class="flex gap-4"></div>
+        </div>
+
+        <div>
+          Design by
+          <a
+            href="https://www.figma.com/community/file/1086879117113975685"
+            target="_blank"
+            >Fauzan Ardhiansyah
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
