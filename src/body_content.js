@@ -2,8 +2,6 @@ const statistics = document.getElementById("statistics");
 const portofolio = document.getElementById("portofolio");
 const originalApps = document.getElementById("originalApps");
 
-const socialMedia = document.getElementById("socialMedia");
-
 const createStatistics = (title, value) => {
   const item = document.createElement("div");
   item.className = "flex flex-col items-end";
@@ -16,19 +14,6 @@ const createStatistics = (title, value) => {
 
   item.append(titleText, bodyText);
   statistics.append(item);
-};
-
-const createSocial = (icon, link) => {
-  const item = document.createElement("a");
-  item.href = link;
-  item.target = "_blank";
-
-  const iconElement = document.createElement("img");
-  iconElement.src = icon;
-  iconElement.className = "w-7 h-7";
-
-  item.append(iconElement);
-  socialMedia.append(item);
 };
 
 const createPortofolio = ({ icon, title, desc, link, target }) => {
@@ -93,12 +78,3 @@ createPortofolio({
   link: "https://play.google.com/store/apps/details?id=com.isenjo.tagar",
   target: originalApps,
 });
-
-createSocial(
-  "./public/facebook.svg",
-  "https://www.facebook.com/jordan.maulana.5/"
-);
-createSocial(
-  "./public/instagram.svg",
-  "https://www.instagram.com/jordan.maulana/"
-);
