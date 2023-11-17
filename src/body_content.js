@@ -95,10 +95,10 @@ createPortofolio({
 });
 
 createSocial(
-  "../public/facebook.svg",
+  "./public/facebook.svg",
   "https://www.facebook.com/jordan.maulana.5/"
 );
 createSocial(
-  "../public/instagram.svg",
+  "./public/instagram.svg",
   "https://www.instagram.com/jordan.maulana/"
 );
