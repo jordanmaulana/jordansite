@@ -19,17 +19,16 @@ const createStatistics = (title, value) => {
 };
 
 const createSocial = (icon, link) => {
-  const item = document.createElement("div");
-  item.className = "flex flex-col items-end";
+  const item = document.createElement("a");
+  item.href = link;
+  item.target = "_blank";
 
-  const titleText = document.createElement("p");
-  titleText.textContent = title;
+  const iconElement = document.createElement("img");
+  iconElement.src = icon;
+  iconElement.className = "w-7 h-7";
 
-  const bodyText = document.createElement("h1");
-  bodyText.textContent = value;
-
-  item.append(titleText, bodyText);
-  statistics.append(item);
+  item.append(iconElement);
+  socialMedia.append(item);
 };
 
 const createPortofolio = ({ icon, title, desc, link, target }) => {
@@ -94,3 +93,12 @@ createPortofolio({
   link: "https://play.google.com/store/apps/details?id=com.isenjo.tagar",
   target: originalApps,
 });
+
+createSocial(
+  "../public/facebook.svg",
+  "https://www.facebook.com/jordan.maulana.5/"
+);
+createSocial(
+  "../public/instagram.svg",
+  "https://www.instagram.com/jordan.maulana/"
+);
