@@ -871,8 +871,7 @@ var pJS = function (tag_id, params) {
         init();
       }
     } else if (
-
-    /* on click event */
+      /* on click event */
       pJS.interactivity.events.onclick.enable &&
       isInArray("bubble", pJS.interactivity.events.onclick.mode)
     ) {
@@ -1431,7 +1430,7 @@ var pJS = function (tag_id, params) {
 
 /* ---------- global functions - vendors ------------ */
 
-Object.deepExtend = function (destination, source) {
+Object.deepExtend = function deepExtendFunction(destination, source) {
   for (var property in source) {
     if (
       source[property] &&
