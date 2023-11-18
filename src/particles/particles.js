@@ -1438,7 +1438,7 @@ Object.deepExtend = function deepExtendFunction(destination, source) {
       source[property].constructor === Object
     ) {
       destination[property] = destination[property] || {};
-      arguments.callee(destination[property], source[property]);
+      deepExtendFunction(destination[property], source[property]);
     } else {
       destination[property] = source[property];
     }
